@@ -1,0 +1,135 @@
+body{
+    background: #C2185B;
+}
+.headSF{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headSF nav{
+    display: block;
+}
+.mainSF{
+    background: #F8BBD0;
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formSF{
+    display: flex;
+    flex-direction: column;
+}
+/* TEXTO */
+.texto{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.texto label{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 50%;
+    text-align: center;
+    
+}
+.texto input{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 40%;
+}
+/* SELECT 1 */
+.selecSF{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.selecSF p{
+    width: 50%;
+    text-align: center;
+}
+
+/* RADIO */
+.contentRadio{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.contentRadio p{
+    width: 50%;
+    text-align: center;
+}
+.radioSF {
+    display: flex;
+    flex-direction: column;
+}
+.radioSF label{
+    display: block;
+    text-align: left;
+}
+.radioSF input{
+    align-items: flex-start;
+}
+
+
+/* SELECT 2 */
+.selectSF2{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.selectSF2 p{
+    width: 50%;
+    text-align: center;
+}
+
+
+
+.checkSF{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.checkSF p{
+    width: 50%
+}
+.checkSFopc{
+    display: flex;
+    flex-direction: column;
+    
+}
+.checkSFopc label{
+    display: block;
+    text-align: left;
+}
+/* textarea */
+.textareaSF{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+.textareaSF p{
+    width: 50%;
+   text-align: center;
+    
+}
+.textareaSF textarea{
+    width: 50%;
+}
+
+/* SUBMIT */
+.submitSF{
+    width: 30%;
+    height: 30px;
+    margin-bottom: 10px;
+    align-self: center;
+    border-radius: 10%;
+    background: #E91E63;
+    color: #FFFFFF;
+}

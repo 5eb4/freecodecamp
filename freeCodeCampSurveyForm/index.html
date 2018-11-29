@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="5EB4">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Survey Form.css"/>
+    </head>
+    <body>
+        <header class="headSF">
+            <nav><a href="index.html" target="_blank">INICIO</a></nav>
+            <h1 id="title">Survey Form</h1>
+        </header>
+        <main class="mainSF">
+            <p id="description"> This survey form is about kind of movies you likes.</p>
+            <form class="formSF" id="survey-form" action="#" method="post">
+                <fieldset>
+                    <legend>Required data</legend>
+                <!-- text -->
+                <div class="texto">
+                    <label for="name" id="name-label">*Name: </label>
+                        <input type="text" name="name" placeholder="Name" size="35" id="name" required>
+                    
+                    <label for="email" id="email-label">*Email: </label>
+                        <input type="email" name="email" placeholder="Email" size="35" id="email" required>
+                    
+                    <label for="number" id="number-label">*Age: </label>
+                        <input type="number" name="number" placeholder="Age" min="2" max="150" size="4" id="number" required>
+                    
+                </div>
+                <!-- select -->
+                <div class="selecSF">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown">
+                        <option value="option" disabled>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="say">Prefer not to Say</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                </div>
+                <!-- radio -->
+                <div class="contentRadio">
+                    <p>* you like to recommend movies to your friends?</p>
+                    <span class="radioSF">
+                        <label for="definitely">
+                            <input type="radio" name="recommend" id="definitely" value="definitely">
+                            Definitely 
+                        </label>
+                        <label for="maybe">
+                            <input type="radio" name="recommend" id="maybe" value="maybe">
+                            Maybe     
+                        </label>
+                        <label for="notSure">
+                            <input type="radio" name="recommend" id="notSure" value="notSure">
+                            Not sure 
+                        </label>
+                    </span>                
+                </div>
+              </fieldset>
+                
+                <div class="selectSF2">
+                    <p>which movie do you like the most? </p>
+                    <select>
+                        <optgroup label="classic">
+                        <option value="pulpFiction" >Pulp Fiction</option>
+                        <option value="godfather" >The Godfather</option>
+                        <option value="rocky" >Rocky</option>
+                        </optgroup>
+                        <optgroup label="Comic"><!-- subtitulo -->
+                        <option value="xmen" >X-Men</option>
+                        <option value="venom" >Venom</option>
+                        <option value="avengers" >Avengers</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div class="checkSF">
+                    <p>Mark all the genres that you like 
+                        (Check all that apply):
+                    </p>
+                    <div class="checkSFopc">
+                        <label for="romantic">
+                            <input type="checkbox" name="genres" id="romantic" value="romantic">
+                            Romantic
+                        </label>
+                        <label for="Sciencefiction">
+                            <input type="checkbox" name="genres" id="Sciencefiction" value="Sciencefiction">
+                            SiFi
+                        </label>
+                        <label for="action">
+                            <input type="checkbox" name="genres" id="action" value="action">
+                            Action
+                        </label>
+                        <label for="adventure">
+                            <input type="checkbox" name="genres" id="adventure" value="adventure">
+                            Adventure
+                        </label>
+                        <label for="drama">
+                            <input type="checkbox" name="genres" id="drama" value="drama">
+                            Drama
+                        </label>
+                    </div>
+                </div>
+                    
+                <div class="textareaSF" >
+                    <p>Any Comments or Suggestions?  </p>
+                    <textarea rows="5" cols="50" placeholder="comments here..."></textarea>
+                </div>
+                    
+                <input class="submitSF" type="submit" name="submit" id="submit">
+            </form>
+        </main>
+        <footer></footer>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
